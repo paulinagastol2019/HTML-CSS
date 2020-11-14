@@ -1,0 +1,26 @@
+button {
+    font-size: 40px;
+}
+
+h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-family: arial;
+    transform: translate(-50%, -50%);
+    font-size: 80px;
+    transition: 1s;
+    border: 0 solid black;
+}
+
+.duzy {
+    font-size: 160px;
+}
+
+.mniejszy {
+    font-size: 40px;
+}
+
+.obramowanie {
+    border: 20px solid black;
+}
