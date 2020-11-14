@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Najeżdzanie na header, nav przypięty</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            text-align: center;
+            color: white;
+            font-size: 30px;
+            text-transform: uppercase;
+            font-family: arial;
+
+        }
+
+
+        body nav {
+            height: 10vh;
+            width: 100vw;
+            line-height: 10vh;
+            background-color: black;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+        }
+
+        body header {
+            height: 90vh;
+            width: 100vw;
+            line-height: 90vh;
+            background-color: red;
+            position: fixed;
+            top: 0;
+            left: 0;
+            margin-top: 10vh;
+
+        }
+
+        body main {
+            height: 200vh;
+            width: 100vw;
+            line-height: 200vh;
+            background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+            position: relative;
+            margin-top: 100vh;
+            left: 0;
+        }
+
+    </style>
+</head>
+
+<body>
+    <nav>
+        Nawigacja - 10% wysokości okna
+    </nav>
+    <header>
+        Header - 90% wysokości okna
+    </header>
+    <main>
+        Główna zawartość - 200% wysokości okna
+    </main>
+</body>
+
+</html>
