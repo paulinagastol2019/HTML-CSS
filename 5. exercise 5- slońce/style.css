@@ -1,0 +1,94 @@
+body {
+    background-color: dimgray;
+    animation: niebo 8s linear infinite;
+
+}
+
+.slonko {
+    position: fixed;
+    height: 20vh;
+    width: 20vh;
+    background-color: firebrick;
+    border-radius: 50%;
+    left: 5vw;
+    bottom: 20%;
+    animation: slonko 8s linear infinite;
+
+
+}
+
+.trawa {
+    height: 40vh;
+    width: auto;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #222;
+    animation: trawka 8s linear infinite;
+}
+
+@keyframes niebo {
+
+    10% {
+        background-color: darkblue;
+    }
+
+    60% {
+        background-color: skyblue;
+    }
+
+
+    70% {
+        background-color: darkkhaki;
+    }
+
+
+}
+
+@keyframes trawka {
+
+    20% {
+        background-color: darkgreen;
+    }
+
+    50% {
+        background-color: greenyellow;
+    }
+
+
+    70% {
+        background-color: darkgreen;
+    }
+
+
+}
+
+
+
+@keyframes slonko {
+
+    20% {
+        background-color: coral;
+        bottom: 40%;
+        left: 20%;
+    }
+
+
+    50% {
+        background-color: yellow;
+        bottom: 60%;
+        left: 50%;
+    }
+
+
+    80% {
+        background-color: coral;
+        bottom: 40%;
+        left: 80%
+    }
+
+    100% {
+        left: 90%;
+        bottom: 20%;
+    }
