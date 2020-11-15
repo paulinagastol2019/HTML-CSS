@@ -1,0 +1,33 @@
+        * {
+            margin: 0;
+            padding: 0
+        }
+
+        .board {
+            height: 30vw;
+            width: 30vw;
+            border: 10px solid black;
+            margin-top: calc(50vh - 15vw);
+            margin-left: calc(50vw - 15vw);
+            font-size: 0;
+        }
+
+        span {
+            display: inline-block;
+            height: 50%;
+            width: 50%;
+        }
+
+        span:first-child,
+        span:last-child {
+
+            background-color: royalblue;
+
+        }
+
+
+        h1 {
+            width: auto;
+            text-align: center;
+            padding: 50px;
+        }

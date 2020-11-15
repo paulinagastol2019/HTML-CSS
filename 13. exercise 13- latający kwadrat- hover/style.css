@@ -1,0 +1,44 @@
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        button {
+            position: absolute;
+            top: 5vh;
+            left: 50vw;
+            width: 120px;
+            height: 50px;
+            transform: translate(-50%, -50%);
+            font-family: arial, sans-serif;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            background-color: transparent;
+            border: 3px solid black;
+            transition: .5s linear;
+        }
+
+        button:hover {
+            color: white;
+            background-color: black;
+        }
+
+        .square {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 0;
+            transition: 3s linear;
+
+        }
+
+        button:hover~.square {
+            top: calc(100% - 20vh);
+            left: calc(100% - 20vh);
+            width: 20vh;
+            height: 20vh;
+            border: 5px solid black;
+        }
