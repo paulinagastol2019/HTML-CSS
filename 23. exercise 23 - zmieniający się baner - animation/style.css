@@ -1,0 +1,39 @@
+ 
+        * {
+            margin: 0;
+        }
+
+        img {
+            position: absolute;
+            width: 100%;
+            top: 0;
+            left: 0;
+        }
+
+        img:nth-last-of-type(1) {
+            animation: banerek 5s linear infinite;
+        }
+
+
+
+        @keyframes banerek {
+            0% {
+                opacity: 0;
+            }
+
+            40% {
+                opacity: 0;
+            }
+
+            50% {
+                opacity: 1
+            }
+
+            90% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }

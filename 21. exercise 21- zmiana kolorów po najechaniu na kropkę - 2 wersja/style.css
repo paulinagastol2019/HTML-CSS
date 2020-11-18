@@ -1,0 +1,90 @@
+
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+
+        .bg {
+            background-color: dimgrey;
+            height: 100vh;
+        }
+
+        .bg p {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            text-transform: uppercase;
+            font-family: arial, sans-serif;
+            letter-spacing: 2px;
+            opacity: 0;
+            color: white;
+            transition: 0.3s;
+        }
+
+        body div.pink,
+        div.green,
+        div.blue,
+        div.orange {
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            border: 2px solid white;
+            transition: 0.3s;
+
+        }
+
+        body div.pink {
+            background-color: hotpink;
+            top: 5%;
+            left: 5%;
+        }
+
+
+        body div.green {
+            background-color: darkseagreen;
+            top: 5%;
+            right: 5%;
+        }
+
+        body div.blue {
+            background-color: lightblue;
+            bottom: 5%;
+            left: 5%;
+        }
+
+        body div.orange {
+            background-color: orange;
+            bottom: 5%;
+            right: 5%;
+        }
+
+
+
+        body div.pink:hover~div.bg {
+            background-color: hotpink;
+        }
+
+
+        body div.green:hover~div.bg {
+            background-color: darkseagreen;
+        }
+
+        body div.blue:hover~div.bg {
+            background-color: lightblue;
+        }
+
+        body div.orange:hover~div.bg {
+            background-color: orange;
+        }
+
+
+        body div.pink:hover~div.bg p.pink,
+        body div.green:hover~div.bg p.green,
+        body div.blue:hover~div.bg p.blue,
+        body div.orange:hover~div.bg p.orange {
+            opacity: 1;
+        }

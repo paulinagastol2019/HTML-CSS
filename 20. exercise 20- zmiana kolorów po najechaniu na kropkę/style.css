@@ -1,0 +1,84 @@
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body .bg {
+            height: 100%;
+            width: 100%;
+        }
+
+        .bg p {
+            position: absolute;
+            font-family: arial, sans-serif;
+            text-transform: uppercase;
+            line-height: 100vh;
+            width: 100vw;
+            text-align: center;
+            display: none;
+            letter-spacing: 1px;
+        }
+
+
+        p.red {
+            background-color: red;
+
+        }
+
+        p.green {
+            background-color: green;
+        }
+
+        p.blue {
+            background-color: blue;
+        }
+
+        p.orange {
+            background-color: orange;
+        }
+
+        .circleRed,
+        .circleGreen,
+        .circleBlue,
+        .circleOrange {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border: 2px solid black;
+            position: absolute;
+
+        }
+
+        .circleRed {
+            top: 10px;
+            left: 10px;
+            background-color: red;
+        }
+
+        .circleGreen {
+            top: 10px;
+            right: 10px;
+            background-color: green;
+        }
+
+        .circleBlue {
+            bottom: 10px;
+            left: 10px;
+            background-color: blue;
+        }
+
+        .circleOrange {
+            bottom: 10px;
+            right: 10px;
+            background-color: orange;
+        }
+
+        .circleRed:hover~div.bg p.red,
+        .circleGreen:hover~div.bg p.green,
+        .circleBlue:hover~div.bg p.blue,
+        .circleOrange:hover~div.bg p.orange {
+            display: block;
+            z-index: -1;
+        }
