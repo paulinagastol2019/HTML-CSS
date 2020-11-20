@@ -1,0 +1,38 @@
+      * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        button {
+            position: absolute;
+            bottom: 20px;
+            left: calc(50% - 40px);
+            border-radius: 50%;
+            font-size: 50px;
+            width: 80px;
+            height: 80px;
+            border-style: none;
+            background-color: palevioletred;
+            color: white;
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+
+        button i {
+            text-shadow: 0 -20px 0 white, 0 -40px 0 white;
+            transform: translateY(-50px);
+            animation: strzalki 1s linear infinite;
+        }
+
+        button:hover i {
+            animation-duration: .5s;
+        }
+
+        @keyframes strzalki {
+            100% {
+                transform: translateY(100px)
+            }
+        }
