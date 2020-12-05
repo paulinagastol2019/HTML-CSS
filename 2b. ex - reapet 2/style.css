@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-family: arial, sans-serif;
+    color: white;
+}
+
+
+body nav {
+    height: 10vh;
+    line-height: 10vh;
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+body header {
+    height: 90vh;
+    line-height: 90vh;
+    background-color: purple;
+    position: fixed;
+    width: 100%;
+    top: 10vh;
+}
+
+body main {
+    height: 200vh;
+    width: 100%;
+    line-height: 200vh;
+    background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+    position: absolute;
+    top: 100vh;
+    left: 0;
+}
