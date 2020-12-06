@@ -1,3 +1,4 @@
+/*
 .zegar {
     position: absolute;
     top: 50%;
@@ -10,18 +11,19 @@
 }
 
 .wskazowka {
-    width: 3px;
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    width: 6px;
     height: 45%;
     background-color: black;
-    position: absolute;
-    bottom: 50%;
-    left: calc(50% - 1.5px);
-    transform: rotate(0deg);
-    border-radius: 50%;
-    transform-origin: bottom;
+    border-radius: 10% 50% 10% 50%;
+    transform: rotate(0deg) translateX(-50%);
+    transform-origin: 50% 100%;
     transition: 60s steps(60);
 }
 
 .zegar:hover .wskazowka {
-    transform: rotate(360deg);
+    transform: rotate(360deg) translateX(-50%);
 }
+*/
