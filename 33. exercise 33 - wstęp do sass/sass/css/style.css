@@ -1,0 +1,17 @@
+div {
+  font-size: 20px;
+  font-family: serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+div p {
+  color: blue;
+  padding: 20px;
+  -webkit-transform: translate(50px);
+          transform: translate(50px);
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+}
+/*# sourceMappingURL=style.css.map */
