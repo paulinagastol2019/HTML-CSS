@@ -1,17 +1,43 @@
-div {
-  font-size: 20px;
-  font-family: serif;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+header {
+  height: 30vh;
+  background-color: #ee4455;
 }
 
-div p {
-  color: blue;
-  padding: 20px;
-  -webkit-transform: translate(50px);
-          transform: translate(50px);
-  -webkit-filter: grayscale(1);
-          filter: grayscale(1);
+h1 {
+  position: absolute;
+  top: 50%;
+}
+
+div.small {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: #000;
+}
+
+div.medium {
+  width: 250px;
+  height: 250px;
+  border-radius: 70%;
+  background-color: #000;
+}
+
+div.large {
+  width: 350px;
+  height: 350px;
+  border-radius: 20%;
+  background-color: #000;
+}
+
+nav {
+  height: 30vh;
+}
+
+nav ul {
+  background-color: #fff;
+}
+
+nav li {
+  font-size: 30px;
 }
 /*# sourceMappingURL=style.css.map */
