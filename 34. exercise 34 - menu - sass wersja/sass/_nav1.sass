@@ -1,33 +1,25 @@
-
 *
     margin: 0
     padding: 0
-    
-nav ul
-    display: flex
-    flex-direction: row
-    justify-content: space-around
 
+    nav
+        ul
+            +box-flex(row, space-around)
+            list-style: none
+            li
+                width: 20%
+                a
+                    display: block
+                    font-family: arial, sans-serif
+                    font-size: 20px
+                    text-transform: uppercase
+                    text-decoration: none
+                    line-height: 50px
+                    background-color: black
+                    text-align: center
+                    color: $font-color
+                    padding: 0 20px
+                    transition: .2s
+                    &:hover
+                        color: pink
 
-nav ul li 
-    flex-basis: 20%
-    list-style: none
-
-
-nav ul li a
-    display: block
-    text-align: center
-    background-color: black
-    height: 30px
-    line-height: 30px
-    text-decoration: none
-    text-transform: uppercase
-    font-family: arial, sans-serif
-    transition: .2s
-    justify-content: space-around
-    color: $font-color
-    padding: 10px
-    
-
-nav ul li a:hover
-     background-color: red
