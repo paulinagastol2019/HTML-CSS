@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.clock {
+position: absolute;
+top: 50% ;
+left: 50% ;
+transform: translate(-50%,-50%);
+background-color: orangered;
+height: 100vh;
+width: 100vh;
+border-radius: 50%;
+}
+
+.arm {
+position: relative;
+top: 0% ;
+left: 50%;
+transform: translateX(-50%) rotate(0deg);
+height: 50vh;
+width: 1vh;
+background-color: gray;
+border-radius: 50%;
+transform-origin: bottom;
+transition: 60s steps(60);
+}
+
+.clock:hover .arm {
+    transform: translateX(-50%) rotate(360deg);
+}
